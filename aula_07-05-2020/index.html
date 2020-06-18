@@ -1,55 +1,92 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Receita Bright</title>
+        <title>Receitas Brilhantes</title>
         <meta charset="utf-8"/>
         <style>
-            h1{
-                font-family:fantasy;
-                background-color: antiquewhite;
+            * {
                 margin: 0px;
-                padding: 10px;
-                text-align: center;    
+                padding: 0px;
             }
-            body{
-                background-color:rgb(90, 69, 44);
-                
+            body {
+                width: 100%;
+                height: 100%;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                background-color: rgb(252, 200, 249);
             }
-            div{
-                text-align:center;
-                margin:20px;
-                padding:0px;   
-            }
-            img{
-                background-color: antiquewhite;
-                padding: 10px;
-                margin: 20px;    
-            }
-            p{
-                background-color: antiquewhite;
-                margin:20px;
-                padding:10px;
-                text-align: center;
-                font-size: 20px;
-            }
-            a{
-                font-size: 20px;
+            a {
+                text-decoration: none;
                 color:black;
-                
+
+            }
+            header {
+                position: sticky;
+                top: 0;
+            }
+            .topo {
+                background-color: white;
+                height: 80px;
+                text-align: center;
+            }
+            .logo {
+                width: 150px;
+                padding-left: 20px;
+                float: left;
+            }
+            #img-logo {
+                width: 80%;
+                height: auto;
+            }
+            .name-pag {
+                display: inline-block;
+                margin: 25px auto;
+                text-align: center;
+                font-size: 30px;
+                color:rgb(58, 57, 57)
+            }
+            .barra-topo {
+                background-color: rgb(58, 57, 57);
+                height: 10px
+
+            }
+            .card {
+                margin-top: 15px;
+                background-color: white;
+                padding: 25px;
+                border-radius: 30px;
+                margin-left: 60px;
+                margin-right: 60px;
+
+            }
+            
+            #gif {
+                padding:25px;
+                background-color: white;
+                border-radius: 30px;
+                margin-top:25px;
+                margin-left: 200px;
             }
         </style>
     </head>
     <body>
-        <h1>RECEITAS  BRILHANTES</h1>
-        <div id="caixa1">
-            <img src="img/animação.gif"  alt="animação culinária">
+        <header>
+            <div class = "topo">
+                <div class="logo">
+                    <img id="img-logo" src="img/logo.png" alt="logo da página">
+                </div>
+                <h1 class="name-pag">RECEITAS  BRILHANTES</h1>
+            </div>
+            <div class="barra-topo"></div>
+        </header>
+            <img  id="gif" src="img/animação.gif"  alt="animação culinária">
+        
+        <div class="card">
+            <p><strong>Escolha uma opção:</strong></p>
+                <ul>
+                    <li><a href="receitas_doces/index.html"><strong>Receitas Doces</strong></a></li>
+                    <li><a href="receitas_salgadas/index.html"><strong>Receitas Salgadas</strong></a></li>
+                </ul>
         </div>
-        <p><strong>Escolha uma opção:</strong></p>
-        <ul>
-            <li><a href="receitas_doces/index.html"><strong>Receitas Doces</strong></a></li>
-            <img src="img/doce.jpg" widht="200" height="150" alt="imagem de receita doce">
-            <li><a href="receitas_salgadas/index.html"><strong>Receitas Salgadas</strong></a></li>
-            <img src="img/salgado.jpg" widht="200" height="150" alt="imagem de recita salgada">
-        </ul>
     </body>
 </html>
