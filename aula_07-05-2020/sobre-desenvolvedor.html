@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Desenvolvedor</title>
+        <meta charset="utf-8"/>
+        <style>
+          * {
+                margin: 0px;
+                padding: 0px;
+            }
+            body {
+                width: 100%;
+                height: 100%;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                background-color: rgb(252, 200, 249);
+            }
+            a {
+                text-decoration: none;
+                color:black;
+
+            }
+            header {
+                position: sticky;
+                top: 0;
+            }
+            .topo {
+                background-color: white;
+                height: 80px;
+                text-align: center;
+            }
+            .logo {
+                width: 150px;
+                padding-left: 20px;
+                float: left;
+            }
+            #img-logo {
+                width: 80%;
+                height: auto;
+            }
+            .name-pag {
+                display: inline-block;
+                margin: 25px auto;
+                text-align: center;
+                font-size: 30px;
+                color:rgb(212, 0, 106)
+            }
+            .barra-topo {
+                background-color: rgb(212, 0, 106);
+                height: 10px
+
+            }
+            .card {
+                margin-top: 15px;
+                background-color: white;
+                padding: 25px;
+                border-radius: 30px;
+               /* margin-left: 60px;
+                margin-right: 60px;
+                */
+
+            }
+            
+            #gif {
+                padding:25px;
+                background-color: white;
+                border-radius: 30px;
+                margin-top:25px;
+                margin-left: 200px;
+            }
+            .container{
+                max-width: 960px;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+            .text-center{
+                text-align: center;
+            }
+            .titulo-site{
+                color:#61c5bf
+            }
+            .barra{
+                height: 100px;
+                background-color: rgb(212, 0, 106);
+                width: 100%;
+                position: static;
+                top:0;
+                border-top-left-radius:10px ;
+                border-top-right-radius: 10px;
+
+            }
+            .foto{
+                position: absolute;
+                width: 150px;
+                padding: 20px;
+
+            }
+            .foto img{
+                width: 100%;
+                border-radius: 50%;
+            }
+            .nome-desenvolvedor{
+                padding:30px;
+                margin-left: 180px;
+            }
+            .nome-desenvolvedor h1{
+                font-size:35px;
+                color:whitesmoke
+            }
+            .dados-desenvolvedor{
+                margin-top: 100px;
+                border-left: 10px solid #61c5bf;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+            .dados-tabela{
+                padding:10px;
+                padding-bottom: 15px;
+            }
+            .dados-tabela a {
+                text-decoration: none;
+                color:rgb(212, 0, 106);
+                font-size: 20px;
+            }
+            .dados-tabela p{
+                text-decoration: none;
+                color:rgb(212, 0, 106);
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class = "topo">
+                 <div class= "container"></div>
+                    <div class="logo">
+                    <img id="img-logo" src="img/logo.png" alt="logo da página">
+                    </div>
+                <h1 class="name-pag">RECEITAS  BRILHANTES</h1>
+                </div>
+            </div>
+            <div class="barra-topo"></div>
+        </header>
+        <div class= "container">
+            <div class= "card text-center">
+                <h1 class="titulo-site">SOBRE O DESENVOLVEDOR</h1>
+
+            </div>
+            <div class= "card">
+                <div class="barra">
+                    <div class="foto">
+                        <img src="img/desenvolvedor.jpeg" alt="foto do desenvolvedor">
+
+                    </div>
+                    <div class="nome-desenvolvedor">
+                        <h1>Bianca Sandis Picali</h1>
+                    </div>
+
+                </div>
+                <div class="dados-desenvolvedor">
+                    <table>
+                        <tr>
+                            <td><img src="img/map-marker-right-outline.png" ></td>
+                            <td class="dados-tabela">
+                                <p>Lençóis Paulista-SP</p>
+                            </td>
+                        </tr>
+                        <tr>
+                                <td><img src="img/notebook-outline.png" ></td>
+                                <td class="dados-tabela">
+                                    <p>Desenvolvimento de Sistemas</p>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/at.png" alt="imagem do email"></td>
+                            <td class="dados-tabela">
+                                <a href="mailto:bianca.picali@etec.sp.gov.br">bianca.picali@etec.sp.gov.br</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/github.png" alt="imagem do Github"></td>
+                            <td class="dados-tabela">
+                                <a href="https://github.com/BiancaPicali" target="_blank">https://github.com/BiancaPicali</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+       
+    </body>
+</html>
