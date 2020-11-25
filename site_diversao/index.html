@@ -42,9 +42,18 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+      <div class="container-fluid">
+        <div class="temas">
+          <h5 style="text-align: center;">Temas: </h5>
+          <button type="button" id="fundo1" class="btn btn-dark">Fundo 1</button>
+          <button type="button" id="fundo2" class="btn btn-secondary">Fundo 2</button>
+          <button type="button" id="fundo3" class="btn btn-info">Fundo 3</button>
+        </div>
       <div class="container mt-2 ml-15 mr-15">
             <div class="alert alert-info text-center" role="alert">
                 <a >Filmes</a>
+                <button type="button" class="btn btn-outline-dark" id="esconderDesenho">Esconder Opções</button>
+                <button type="button" class="btn btn-outline-dark " id="aparecerDesenho">Aparecer Opções</button>
             </div>
             <div class="row">
                 <div class="col-4">
@@ -80,6 +89,8 @@
             </div>
             <div class="alert alert-info text-center" role="alert">
                 <a >Séries</a>
+                <button type="button" class="btn btn-outline-dark" id="esconderDesenho">Esconder Opções</button>
+                <button type="button" class="btn btn-outline-dark " id="aparecerDesenho">Aparecer Opções</button>
             </div>
             <div class="row">
                 <div class="col-4">
@@ -115,6 +126,8 @@
             </div>
             <div class="alert alert-info text-center" role="alert">
                 <a >Desenhos</a>
+                <button type="button" class="btn btn-outline-dark" id="esconderDesenho">Esconder Opções</button>
+                <button type="button" class="btn btn-outline-dark " id="aparecerDesenho">Aparecer Opções</button>
             </div>
             <div class="row">
                 <div class="col-4">
@@ -150,6 +163,28 @@
             </div>
             
       </div>
+      <div class="container">
+        <form>
+      <div class="form-group">
+        <label for="nome">Nome: </label>
+        <input type="text" class="form-control" id="nome">
+      </div>
+      <div class="form-group">
+        <label for="email">E-Mail: </label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <label for="mensagem">Mensagem: </label>
+        <textarea class="form-control" id="mensagem"></textarea>
+      </div>
+      <button type="button" class="btn btn-primary" id="enviar">Enviar</button>
+      </form>
+      </div>
+      <script> 
+        $('#fundo3').click(function(){
+          $('body').addClass('bg-info');
+        });
+      </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
