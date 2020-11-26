@@ -45,16 +45,24 @@
       <div class="container-fluid">
         <div class="temas">
           <h5 style="text-align: center;">Temas: </h5>
-          <button type="button" id="fundo1" class="btn btn-dark">Fundo 1</button>
-          <button type="button" id="fundo2" class="btn btn-secondary">Fundo 2</button>
-          <button type="button" id="fundo3" class="btn btn-info">Fundo 3</button>
+          <div class="d-flex justify-content-center">
+            <button type="button" id="fundo1" class="btn btn-dark">Fundo 1</button>
+            <button type="button" id="fundo2" class="btn btn-secondary">Fundo 2</button>
+            <button type="button" id="fundo3" class="btn btn-info">Fundo 3</button>
+            <button type="button" id="fundo4" class="btn btn-primary">Fundo 4</button>
+            <button type="button" id="fundo5" class="btn btn-success">Fundo 5</button>
+            <button type="button" id="fundo6" class="btn btn-danger">Fundo 6</button>
+            <button type="button" id="fundo7" class="btn btn-warning">Fundo 7</button>
+            <button type="button" id="fundo8" class="btn btn-light">Fundo 8</button>
+          </div>
         </div>
       <div class="container mt-2 ml-15 mr-15">
             <div class="alert alert-info text-center" role="alert">
                 <a >Filmes</a>
-                <button type="button" class="btn btn-outline-dark" id="esconderDesenho">Esconder Opções</button>
-                <button type="button" class="btn btn-outline-dark " id="aparecerDesenho">Aparecer Opções</button>
+                <button type="button" class="btn btn-outline-dark" id="esconderF">Esconder Opções</button>
+                <button type="button" class="btn btn-outline-dark " id="aparecerF">Aparecer Opções</button>
             </div>
+            <div class="ff">
             <div class="row">
                 <div class="col-4">
                     <div class="card" style="width: 18rem; margin-bottom: 3rem;">
@@ -87,10 +95,11 @@
                     </div>
                 </div>
             </div>
+          </div>
             <div class="alert alert-info text-center" role="alert">
                 <a >Séries</a>
-                <button type="button" class="btn btn-outline-dark" id="esconderDesenho">Esconder Opções</button>
-                <button type="button" class="btn btn-outline-dark " id="aparecerDesenho">Aparecer Opções</button>
+                <button type="button" class="btn btn-outline-dark" id="esconderS">Esconder Opções</button>
+                <button type="button" class="btn btn-outline-dark " id="aparecerS">Aparecer Opções</button>
             </div>
             <div class="row">
                 <div class="col-4">
@@ -126,8 +135,8 @@
             </div>
             <div class="alert alert-info text-center" role="alert">
                 <a >Desenhos</a>
-                <button type="button" class="btn btn-outline-dark" id="esconderDesenho">Esconder Opções</button>
-                <button type="button" class="btn btn-outline-dark " id="aparecerDesenho">Aparecer Opções</button>
+                <button type="button" class="btn btn-outline-dark" id="esconderD">Esconder Opções</button>
+                <button type="button" class="btn btn-outline-dark " id="aparecerD">Aparecer Opções</button>
             </div>
             <div class="row">
                 <div class="col-4">
@@ -180,15 +189,40 @@
       <button type="button" class="btn btn-primary" id="enviar">Enviar</button>
       </form>
       </div>
-      <script> 
-        $('#fundo3').click(function(){
-          $('body').addClass('bg-info');
-        });
-      </script>
+  
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script> 
+      $('#fundo1').click(function(){
+        $('body').addClass('bg-dark');
+      });
+      $('#fundo2').click(function(){
+        $('body').addClass('bg-secondary');
+      });
+      $('#fundo3').click(function(){
+        $('body').addClass('bg-info');
+      });
+      $('#fundo4').click(function(){
+        $('body').addClass('bg-primary');
+      });
+      $('#fundo5').click(function(){
+        $('body').addClass('bg-success');
+      });
+      $('#fundo6').click(function(){
+        $('body').addClass('bg-danger');
+      });
+      $('#fundo7').click(function(){
+        $('body').addClass('bg-warning');
+      });
+      $('#fundo8').click(function(){
+        $('body').addClass('bg-light');
+      });
+      $('esconderF').click(function(){
+        $('ff').hide();
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>
